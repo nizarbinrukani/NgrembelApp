@@ -6,6 +6,7 @@ import android.telephony.ClosedSubscriberGroupInfo;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.myapplication.ui.home.HomeFragment;
 import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.login.RegisterActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -68,6 +69,11 @@ public class MenuActivity extends AppCompatActivity {
     public void loginClick(View view)
     {
         Intent i = new Intent(MenuActivity.this, RegisterActivity.class);
+        startActivity(i);
+    }
+
+    public void showMenu(View view){
+        Intent i = new Intent(MenuActivity.this, MakanMinum.class);
         startActivity(i);
     }
 
