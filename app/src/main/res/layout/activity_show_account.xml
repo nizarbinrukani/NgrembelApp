@@ -33,19 +33,32 @@
 <!--        app:layout_constraintTop_toBottomOf="@+id/password3" />-->
 
     <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="#787878"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText"/>
+
+    <TextView
         android:id="@+id/emailText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:fontFamily="sans-serif"
         android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameText"/>
+        app:layout_constraintTop_toBottomOf="@+id/label_email"/>
 
 <!--    <EditText-->
 <!--        android:id="@+id/password4"-->
@@ -65,19 +78,31 @@
 <!--        app:layout_constraintTop_toBottomOf="@+id/username3" />-->
 
     <TextView
+        android:id="@+id/label_noTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:text="Nomor Telepon"
+        android:textColor="#787878"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"/>
+    <TextView
         android:id="@+id/noTelpText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:text="Nomor Telepon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText"/>
+        app:layout_constraintTop_toBottomOf="@+id/label_noTelp"/>
 
 <!--    <EditText-->
 <!--        android:id="@+id/password5"-->
@@ -124,11 +149,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
+        android:id="@+id/label_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textColor="#787878"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+
+    <TextView
         android:id="@+id/usernameText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
@@ -136,15 +174,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+        app:layout_constraintTop_toBottomOf="@+id/label_username"/>
 
+    <View
+        android:id="@+id/jarakNoTelpSwitch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noTelpText"/>
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_editor_absoluteY="283dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jarakNoTelpSwitch"/>
 
     <!--    <EditText-->
 <!--        android:id="@+id/username3"-->
