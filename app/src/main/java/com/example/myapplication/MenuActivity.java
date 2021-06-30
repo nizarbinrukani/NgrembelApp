@@ -73,8 +73,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void showMenu(View view){
-        Intent i = new Intent(MenuActivity.this, MakanMinum.class);
-        startActivity(i);
+        //Intent i = new Intent(MenuActivity.this, MakanMinum.class);
+        //startActivity(i);
     }
 
     public void lokasiClick(View view)
