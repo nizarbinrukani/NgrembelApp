@@ -6,6 +6,7 @@ import android.telephony.ClosedSubscriberGroupInfo;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.myapplication.ui.Informasi;
 import com.example.myapplication.ui.home.HomeFragment;
 import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.login.RegisterActivity;
@@ -80,6 +81,11 @@ public class MenuActivity extends AppCompatActivity {
     public void lokasiClick(View view)
     {
         Intent i = new Intent(MenuActivity.this, LocationActivity.class);
+        startActivity(i);
+    }
+
+    public void showPemesanan(View view){
+        Intent i = new Intent(MenuActivity.this, Informasi.class);
         startActivity(i);
     }
 

@@ -118,6 +118,7 @@
         android:backgroundTint="#FDA31D"
         android:enabled="true"
         android:fontFamily="casual"
+        android:onClick="showPemesanan"
         android:text="Informasi"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
