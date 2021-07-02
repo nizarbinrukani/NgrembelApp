@@ -85,7 +85,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void showPemesanan(View view){
-        Intent i = new Intent(MenuActivity.this, Informasi.class);
+        Intent i = new Intent(MenuActivity.this, PemesananActivity.class);
         startActivity(i);
     }
 
